@@ -1,0 +1,66 @@
+.gray-bar {
+	background-color: #808080; /*kolor tla - szary hex*/
+	padding: 10px 5px 5px 10px; /*odstep wewnatrz elementu - top, left, right, bottom*/
+	margin-left: auto; /*margines lewy - automatycznie*/
+	margin-right: auto; /*margines prawy - automatycznie*/
+}
+
+.p-center {
+	font-size: 18pt; /*rozmiar czcionki */
+	font-weight: bold; /*pogrubienie*/
+	text-align: center; /*wyrownanie do srodka*/
+}
+
+.yellow-bar {
+	background-color: #FFFF00; /*kolor tla - zolty hex*/
+	padding: 10px 5px 5px 10px; /*odstep wewnatrz elementu - top, left, right, bottom*/
+	margin: 10px 0px; /* margines 10px - top & bottom, 0px - left & right */
+}
+
+.yellow-button {
+	background-color: #FFFF00; /*kolor tla - zolty hex*/
+	height: 40px; /*wysokosc przycisku*/
+	width: 97%; /*szerokosc przycisku*/
+	margin-top: 10px;
+	font-size: 16pt;
+}
+
+.li-circle {
+	list-style-type: circle; /*type - rodzaj punktora: disc, circle lub square*/
+	line-height: 30px; /*wysokosc linii*/
+}
+
+.form-element {
+	height: 50px;
+}
+
+.clear {
+	clear: both;
+}
+
+
+#container {
+	margin-left: auto;
+	margin-right: auto;
+	top: 5px;
+	bottom: 5px;
+	left: 5px;
+	right: 5px;
+	position: absolute;
+	font-family: Arial;
+}
+
+#left, #right {
+	width: 15%;
+	float: left;
+	height: 65vh;
+}
+
+#center {
+	width: 64%;
+	float: left;
+	margin-left: 0.95%;
+	margin-right: 0.95%;
+	padding-left: 20px;
+	height: 65vh;
+}

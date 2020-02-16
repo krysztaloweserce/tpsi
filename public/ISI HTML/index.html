@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+	<title>Strona główna - Karol Grzybowski</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="Stylesheet" type="text/css" href="./style.css" />
+	</head>
+	<body>
+	<?php
+	session_start();
+	if ( isset( $_SESSION['auth'] ) && $_SESSION['auth'] ) {
+		header( 'Location: dashboard.php' );
+		exit;
+	}
+	?>
+	<div id="container"> <!-- glowny kontener -->
+	
+		<div id="header" class="gray-bar"> <!-- naglowek -->
+			<p class="p-center"><a href="./index.html">LOGO</a></p>
+		</div>
+		
+		<div id="mid"> <!-- cialo -->
+			
+			<div id="left" class="yellow-bar"> <!-- lewa kolumna -->
+				<div style="margin-top:10px;">
+					<a href="./index.html">
+					<button class="yellow-button">Strona główna</button>
+					</a>
+				</div>
+				<div>
+					<a href="./form.html">
+					<button class="yellow-button">Formularz</button>
+					</a>
+				</div>
+				<div>
+					<a href="./session.html">
+					<button class="yellow-button">Zawartość sesji</button>
+					</a>
+				</div>
+			</div>
+			
+			<div id="center" class="yellow-bar"> <!-- srodkowa kolumna -->
+				<div style="margin-top: 30px;">
+					<h3>To jest strona główna.</h3>
+					<p><b>Autor:</b> Karol Grzybowski</p>
+					<p><b>Numer indeksu:</b> 35199</p>
+					<p><b>E-mail:</b> <a href="mailto:gk35199@zut.edu.pl">gk35199@zut.edu.pl</a></p>
+				</div>
+			</div>
+			
+			<div id="right" class="yellow-bar"> <!-- prawa kolumna -->
+				 <!-- ul - unordered list (punktowana), ol - ordered list (numerowana) -->
+				<ul class="li-circle">  <!--  -->
+					<!-- li - element listy -->
+					<li>
+						<a href="www.google.com" target="_blank">google.com</a>
+					</li>
+					 <!-- a - odnosnik href - adres target - miejsce otwarcia, _blank - nowa karta -->
+					<li>
+						<a href = "http://irejer.zut.edu.pl/index.php?id=6695&no_cache=1" target="_blank">irejer.zut.edu.pl</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="clear"></div>
+		<div id="footer" class="gray-bar"> <!-- stopka -->
+			<p class="p-center">STOPKA</p>
+		</div>
+		
+	</div>
+	</body>
+</html>
+

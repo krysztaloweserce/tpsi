@@ -8,4 +8,6 @@
     <div class="jumbotron">
         <p>{{$post->body}}</p>
     </div>
+    <hr>
+    <a href = "/posts/{{$post->id}}/edit" clas="btn btn-default">Edit Post</a>
 @endsection

@@ -5,11 +5,11 @@
     
     @if(count($posts) > 1)
         @foreach($posts as $post)
-        <div class="media">
-            <div class="media-body">
-              <h3 class="mt-0"><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
-              <br/>
-              <small>{{$post->created_at}}</small>
+        <div class="card">
+            <div class="card-body">
+              <h3 class="card-title"><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
+              <small class="card-text">{{$post->created_at}}</small><br/>
+              <button class="btn btn-sm btn-dark"><a href="/posts/{{$post->id}}" class="text-light">Read More</a></button>
             </div>
           </div>
         @endforeach

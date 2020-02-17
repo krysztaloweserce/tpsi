@@ -8,7 +8,7 @@
         <div class="card">
             <div class="card-body">
               <h3 class="card-title"><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
-              <small class="card-text">{{$post->created_at}}</small><br/>
+            <small class="card-text">Written on {{$post->created_at}} by <em>{{$post->user->name}}</em></small><br/>
               <button class="btn btn-sm btn-dark"><a href="/posts/{{$post->id}}" class="text-light">Read More</a></button>
             </div>
           </div>

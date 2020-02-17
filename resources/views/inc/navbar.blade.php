@@ -23,12 +23,10 @@
                   <a class="nav-link" href="/services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/posts">Posts</a>
+                <a class="nav-link" href="/posts">Blog</a>
               </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="/posts/create">Create Post</a></li>
-            </ul>
+
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
@@ -48,7 +46,9 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ route('logout') }}"
+                              <a class="dropdown-item" href="/dashboard">Dashboard</a>
+                              <a class="dropdown-item" href="/posts/create">Create Post</a>
+                              <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
